@@ -1,0 +1,185 @@
+.border-white {
+  border-left: 14px solid #fff;
+  border-right: 14px solid #fff; }
+
+.bg-coral, .header_bottom_area, .header_areabaja, footer {
+  background-color: #F2AE9C; }
+
+.bg-naranja {
+  background-color: #E8603C; }
+
+.font-white, .orangebutton, .a-pag, .pag li a.active, .header_area .navbar-default .navbar-nav li a:hover, .header_area .navbar-default .navbar-nav li a:focus, .header_areabaja h2, .sec-footer, .sec-footer h2, .sec-footer a {
+  color: #fff; }
+
+.orangebutton {
+  font-family: 'bebas';
+  background-color: #E8603C;
+  padding: 8px 18px;
+  display: inline-block;
+  margin: 14px 0px;
+  border: 2px solid #E8603C; }
+  .orangebutton:hover, .orangebutton:focus {
+    color: #E8603C;
+    background-color: #fff;
+    text-decoration: none; }
+
+.pd-0 {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.mg-0 {
+  margin: 0px; }
+
+.pl-3, .plr-3 {
+  padding-left: 3px; }
+
+.pr-3, .plr-3 {
+  padding-right: 3px; }
+
+.mb-6 {
+  margin-bottom: 6px; }
+
+.position-absolute {
+  position: absolute; }
+
+.w-100, .bg-coral, .header_bottom_area, .header_areabaja, footer {
+  width: 100%; }
+
+.pr-40 {
+  padding-right: 40px; }
+
+.a-style-pag, .a-pag, .pag li a.active {
+  padding: 10px 18px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none; }
+
+.a-pag, .pag li a.active {
+  border: 1px solid #C47358;
+  background-color: #E8603C; }
+  .a-pag:hover, .pag li a.active:hover {
+    background-color: #F3AF9D; }
+
+.ul-pag, .pag {
+  list-style-type: none; }
+
+.li-pag, .pag li {
+  display: inline-block;
+  margin-right: 10px; }
+
+.display-inline-block {
+  display: inline-block; }
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../font/HelveticaNeue.eot");
+  src: url("../font/HelveticaNeue.ttf");
+  src: url("../font/HelveticaNeue.woff"); }
+* {
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  text-decoration: none;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'bebas';
+  color: #E8603C; }
+
+section {
+  padding: 20px 14px; }
+
+.text-plomo {
+  color: #777; }
+
+header {
+  font-family: 'bebas'; }
+
+.header_area .navbar-default {
+  background-color: #fff;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .header_area .navbar-default .navbar-nav.navbar-right {
+    padding-right: 14px; }
+  .header_area .navbar-default .navbar-nav li {
+    margin-top: 5px; }
+    .header_area .navbar-default .navbar-nav li a {
+      color: #777;
+      font-size: 16px; }
+      .header_area .navbar-default .navbar-nav li a:hover, .header_area .navbar-default .navbar-nav li a:focus {
+        background-color: #FFE2DA; }
+    .header_area .navbar-default .navbar-nav li.active a {
+      color: #E8603C;
+      background-color: transparent; }
+
+.navbar-brand h1 {
+  margin-left: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #E8603C; }
+  .navbar-brand h1 span {
+    color: #F3AF9D; }
+
+.header_bottom_area {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+  margin-top: 95px;
+  z-index: -1; }
+
+.header_areabaja {
+  margin-top: 95px; }
+  .header_areabaja h2 {
+    margin: 0px;
+    padding: 14px 0px 21px 21px; }
+
+footer {
+  margin-top: 40px; }
+
+.sec-footer {
+  padding: 14px; }
+  .sec-footer h2 {
+    padding-bottom: 14px;
+    text-transform: uppercase; }
+  .sec-footer a {
+    text-decoration: none; }
+    .sec-footer a:hover, .sec-footer a:focus {
+      color: #F3AF9D; }
+  .sec-footer p {
+    padding-bottom: 30px; }
+    .sec-footer p a {
+      color: #fff;
+      text-decoration: none; }
+      .sec-footer p a:hover, .sec-footer p a:focus {
+        color: #F3AF9D; }
+  .sec-footer ul {
+    margin-top: 14px; }
+    .sec-footer ul a img {
+      margin-right: 7px;
+      box-shadow: -2px -2px 2px solid gray; }
+
+@media (max-width: 768px) {
+  .sec-footer {
+    padding: 0px 28px; }
+    .sec-footer p {
+      padding-bottom: 14px; }
+
+  .pr-40 {
+    padding-right: 15px; }
+
+  .pag-portfolio li {
+    margin-bottom: 20px; }
+
+  .paginacion li {
+    margin-bottom: 30px; } }
+@media (max-width: 991px) {
+  .body-portfolio a.post-portfolio div {
+    margin-bottom: 20px; }
+
+  .from-blog a.post div {
+    margin-bottom: 25px; } }
+
+/*# sourceMappingURL=main.css.map */

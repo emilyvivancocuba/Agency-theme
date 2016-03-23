@@ -1,0 +1,25 @@
+mixin col4
+	.col-xs-12.col-sm-12.col-md-4.col-lg-4
+		.box
+			if block
+				block
+mixin container(title, subtitle)
+	.container
+		h2=title
+		p=subtitle
+		if block
+			block
+mixin h4-p(h4)
+	h4=h4
+	p='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem obcaecati veniam dolorum et ea adipisci libero sit nemo velit alias.'
+		if block
+			block
+mixin li-text(h4head, h4sub)
+	.timeline-text
+		.timeline-hero
+			h4=h4head
+			h4.h4-sub=h4sub
+		.timeline-sub
+			p.text-plomo='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!'
+				if block
+					block

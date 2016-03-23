@@ -1,0 +1,61 @@
+header{
+	font-family: 'bebas';
+}
+.header_area{
+	.navbar-default{
+		background-color: $white;
+		border: none;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		.navbar-nav{
+			&.navbar-right{
+				padding-right: 14px;
+			}
+			li{
+				margin-top: 5px;
+				a{
+					color: $plomo;
+					font-size: 16px;
+					&:hover, &:focus{
+						@extend .font-white;
+						background-color: #FFE2DA;
+					}
+				}
+				&.active{
+					a{
+						color: $naranja;
+						background-color: transparent;
+					}
+				}
+			}
+		}
+	}
+}
+.navbar-brand{
+	h1{
+		margin-left: 14px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		color: $naranja;
+		span{
+			color: $coral;
+		}
+	}
+}
+.header_bottom_area{
+	@extend .bg-coral;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	position: relative;
+	margin-top: 95px;
+	z-index: -1;
+}
+.header_areabaja{
+	@extend .bg-coral;
+	margin-top: 95px;
+	h2{
+		@extend .font-white;
+		margin: 0px;
+		padding: 14px 0px 21px 21px;
+	}
+}

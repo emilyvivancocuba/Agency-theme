@@ -1,0 +1,25 @@
+@font-face {
+ font-family: "Helvetica";
+ src: url("../font/HelveticaNeue.eot");
+ src: url("../font/HelveticaNeue.ttf");
+ src: url("../font/HelveticaNeue.woff");
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+	-webkit-transition: .2s;
+    transition: .2s;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'bebas';
+	color: $naranja;
+}
+section{
+	padding: 20px 14px;
+}
+.text-plomo{
+	color: $plomo;
+}
