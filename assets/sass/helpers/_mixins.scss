@@ -1,12 +1,14 @@
-@mixin border-right($color){
-	border-right: 1px solid $color;
+@mixin fullscreen($imgURL){
+	background-image: $imgURL;
+	display: table;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
 }
-@mixin border-left($color){
-	border-left: 1px solid $color;
-}
-@mixin border-bottom($color){
-	border-bottom: 1px solid $color;
-}
-@mixin border($color){
-	border: 1px solid $color;
+@mixin border-radius($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
 }

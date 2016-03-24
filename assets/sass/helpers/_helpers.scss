@@ -1,93 +1,30 @@
-.border-white{
-	border-left: 14px solid $white;
-	border-right: 14px solid $white;
+.upper{
+	text-transform: uppercase;
 }
-.bg-coral{
-	background-color: $coral2;
-	@extend .w-100;
-}
-.bg-naranja{
-	background-color: $naranja;
-}
-.font-white{
-	color: $white;
-}
-.orangebutton{
-	@extend .font-white;
-	font-family: 'bebas';
-	background-color: $naranja;
-	padding: 8px 18px;
-	display: inline-block;
-	margin: 14px 0px;
-	border: 2px solid $naranja;
-	&:hover, &:focus{
-		color: $naranja;
-		background-color: $white;
-		text-decoration: none;
-	}
-}
-.pd-0{
-	padding-left: 0px;
-	padding-right: 0px;
-}
-.mg-0{
-	margin: 0px;
-}
-.pl-3{
-	padding-left: 3px;
-}
-.pr-3{
-	padding-right: 3px;
-}
-.plr-3{
-	@extend .pl-3;
-	@extend .pr-3;
-}
-.mb-6{
-	margin-bottom: 6px;
-}
-.position-absolute{
-	position: absolute;
+.t-trans-none{
+	text-transform: none;
 }
 .w-100{
 	width: 100%;
 }
-.pr-40{
-	padding-right: 40px;
+.font-monse{
+	font-family: 'Montserrat', Arial, sans-serif;
 }
-.a-style-pag{
-	padding: 10px 18px;
-	font-size: 18px;
-	font-weight: 500;
-	text-decoration: none;
+.font-droid{
+	font-family: 'Droid Serif', serif;
 }
-.a-pag{
-	@extend .font-white;
-	@extend .a-style-pag;
-	@include border(#C47358);
-	background-color: $naranja;
+.font-robot{
+	font-family: 'Roboto Slab', Arial, sans-serif;
+}
+.a-table{
+	@include border-radius(100%);
+	color: $white;
+	display: table;
 	&:hover{
-		background-color: $coral;
+		@include border-radius(15px);
 	}
 }
-.ul-pag{
-	list-style-type: none;
-}
-.li-pag{
-	display: inline-block;
-	margin-right: 10px;
-}
-.pag{
-	@extend .ul-pag;
-	li{
-		@extend .li-pag;
-		a{
-			&.active{
-				@extend .a-pag;
-			}
-		}
-	}
-}
-.display-inline-block{
-	display: inline-block;
+.i-centered{
+	display: table-cell;
+	vertical-align: middle;
 }

@@ -6,7 +6,7 @@ mixin col4
 mixin container(title, subtitle)
 	.container
 		h2=title
-		p=subtitle
+		p.italic=subtitle
 		if block
 			block
 mixin h4-p(h4)
@@ -14,12 +14,43 @@ mixin h4-p(h4)
 	p='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem obcaecati veniam dolorum et ea adipisci libero sit nemo velit alias.'
 		if block
 			block
+mixin col4-a-img-h4-p(href, imgURL,imgALT, h4, p)
+	.col-xs-12.col-sm-4.col-md-4.col-lg-4
+		.box
+			a(href="#{href}")
+				img(src="#{imgURL}", alt="#{imgALT}")
+				h4= h4
+				p= p
+				if block
+					block
+mixin col4-img-h4-p(imgURL,imgALT, h4, p)
+	+col4
+		img.img-circle.img-responsive.img-thumbnail(src="#{imgURL}", alt="#{imgALT}")
+		h4= h4
+		p= p
+		include links-redes-sociales.jade
+		if block
+			block
 mixin li-text(h4head, h4sub)
 	.timeline-text
-		.timeline-hero
+		.timeline-title
 			h4=h4head
 			h4.h4-sub=h4sub
-		.timeline-sub
+		.timeline-parrafo
 			p.text-plomo='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!'
 				if block
 					block
+mixin li-text-left(imgURL, imgALT, h4head, h4sub)
+	li
+		.timeline-img
+			img.img-circle.img-responsive.img-thumbnail.bg-gray(src="#{imgURL}", alt="#{imgALT}")
+		+li-text(h4head, h4sub)
+		if block
+			block
+mixin li-text-right(imgURL, imgALT, h4head, h4sub)
+	li.timeline-text-right
+		.timeline-img
+			img.img-circle.img-responsive.img-thumbnail.bg-gray(src="#{imgURL}", alt="#{imgALT}")
+		+li-text(h4head, h4sub)
+		if block
+			block

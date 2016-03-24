@@ -1,0 +1,11 @@
+#contact.contact-us.w-100
+	+container('Contact Us', 'Lorem ipsum dolor sit amet, consectetur.')
+		.row
+			.col-xs-12.col-sm-8.col-md-6.col-lg-6
+				form
+					input(type="text" name="name" required="required" placeholder="Your name*")
+					input(type="text" name="email" required="required" placeholder="Your email*")
+					input(type="text" name="phone" required="required" placeholder="Your phone*")
+			.col-xs-12.col-sm-4.col-md-6.col-lg-6
+				textarea(name="message" required="required" placeholder="Your message*")
+		button(type="submit" name="submit" class="btn btn-submit botones" value="text") Send Message
